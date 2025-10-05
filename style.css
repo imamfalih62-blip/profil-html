@@ -1,0 +1,81 @@
+/* Gunakan font sans-serif untuk seluruh teks */
+/* Tambahkan latar belakang berwarna lembut pada halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Font sans-serif */
+    background-color: #f0f8ff; /* Latar belakang berwarna lembut (Alice Blue) */
+    color: #333; /* Warna teks default abu-abu gelap */
+    margin: 0; 
+    padding: 20px;
+}
+
+/* --- HEADINGS --- */
+
+/* Ubah warna teks heading menjadi biru */
+h1, h2, h3 {
+    color: #007bff; /* Warna biru terang */
+    margin-bottom: 10px; 
+}
+
+/* Penengahan untuk H1 WELCOME */
+h1 {
+    text-align: center;
+}
+
+/* --- PARAGRAPH --- */
+
+/* Atur jarak antar paragraf menggunakan properti margin */
+p {
+    margin-bottom: 15px; /* Jarak 15px di bawah setiap paragraf */
+    line-height: 1.6; /* Opsional: Meningkatkan keterbacaan baris */
+}
+
+/* --- TABEL & MEDIA (Foto & Video) --- */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Penengahan Teks "Foto Profil" dan "Video Hobi" */
+th p {
+    text-align: center; 
+}
+
+/* Agar gambar dan video juga rata tengah di kolom tabel */
+img, video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- FORM & BUTTONS --- */
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+input[type="text"], textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 40%;
+    margin-top: 5px;
+}
