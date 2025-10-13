@@ -1,101 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Profil Imam Falih</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css"> 
+
 </head>
-<body>
-    <h1>WELCOME</h1>
-     <!-- penggunaan tag tabel th, tr, td -->
-    <table>
-        <th>
-             <!-- penggunaan tag "img" untuk foto dan "video" untuk video-->
-            <p>Foto Profil</p>
-            <img src="/img/mulet.jpeg"
-            width="40%" 
-            height="40%">
-        </th>
-        <th>
-            <p>Video Hobi</p>
-            <video src="/img/robloxkuy.mp4"
-            autoplay
-            controls
-            height="30%"
-            width="30%"
-            ></video>
-        </th>
-    </table>
+<body class="d-flex flex-column bg-light"> 
 
-    <h2>Tentang Saya</h2>
-    <p>Halo! Saya Imam Falih Ibnu Dar. Saya mahasiswa Telkom University jurusan Teknologi Informasi, saya tertarik untuk belajar ngoding dan
-        membuat web</p>
-    <p>Hobi saya bermain game, Roblox adalah salah satunya.</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">Profil Imam Falih</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hobi">Hobi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- penggunaan tag button dan A (Anchor) -->
-    <h2>Sosial Media</h2>
-    <a href="https://www.instagram.com/imamflhh?utm_source=qr&igsh=MXFyd2h3OXJhODI5dQ=="> 
-    <button>INSTAGRAM</button></a>
+    <main class="container my-5 flex-grow-1">
+        <h1 class="text-center text-primary mb-4">WELCOME</h1>
 
-    <h2>Hobi Game</h2>
-    <table border="1" width="25%">
-        <thead>
-            <th>NO</th>
-            <th colspan="20">NAMA GAME</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td align="center">1</td>
-                <td align="center">MOBILE LEGEND</td> 
-            </tr>
+        <div class="row mb-5 text-center profile-media">
+            <div class="col-md-6 mb-3">
+                <div class="info-card h-100">
+                    <p class="fw-bold">Foto Profil</p>
+                    <img src="/img/mulet.jpeg" class="img-fluid" alt="Foto Profil">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <div class="info-card h-100">
+                    <p class="fw-bold">Video Hobi</p>
+                    <video src="/img/robloxkuy.mp4" class="w-100" autoplay controls muted></video>
+                </div>
+            </div>
+        </div> 
+
+        <div class="row">
             
-            <tr>
-                <td align="center">2</td>
-                <td align="center">ROBLOX</td>
-            </tr>
+            <div class="col-lg-6 mb-4">
+                <div class="p-4 border rounded shadow-sm bg-white h-100">
+                    <h2 id="about" class="text-primary border-bottom pb-2">Tentang Saya</h2>
+                    <p>Halo! Saya Imam Falih Ibnu Dar. Saya mahasiswa Telkom University jurusan Teknologi Informasi, saya tertarik untuk belajar ngoding dan membuat web.</p>
+                    <p>Hobi saya bermain game, Roblox adalah salah satunya.</p>
 
-             <tr>
-                <td align="center">3</td>
-                <td align="center">PES 2021</td>
-            </tr>
-        </tbody>
-    </table>
+                    <h2 class="mt-4 text-primary border-bottom pb-2">Sosial Media</h2>
+                    <a href="https://www.instagram.com/imamflhh?utm_source=qr&igsh=MXFyd2h3OXJhODI5dQ==" class="btn btn-danger me-2 mb-2">INSTAGRAM</a>
+                    <a href="https://wa.me/6285156572471" class="btn btn-success me-2 mb-2">WHATSAAPP</a>
 
-    <!-- penggunaan tag form, textarea dan input -->
-    <h2>Hubungi Saya</h2>
-    <form action="">
-        <p>
-            Nama: 
-            <p></p>
-            <label for="Username"></label>
-            <input type="text" id="username">
-        </p>
+                    <h2 id="hobi" class="mt-4 text-primary border-bottom pb-2">Hobi Game</h2>
+                    <table class="table table-striped table-bordered w-75 mx-auto">
+                        <thead>
+                            <tr>
+                                <th class="text-center">NO</th>
+                                <th class="text-center">NAMA GAME</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">MOBILE LEGEND</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">ROBLOX</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">PES 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-        <p>
-            Email: 
-            <p></p>
-            <label for="Username"></label>
-            <input type="text" id="Username"> 
-        </p>
+            <div class="col-lg-6 mb-4">
+                <div class="p-4 border rounded shadow-sm bg-white h-100">
+                    <h2 id="kontak" class="text-primary border-bottom pb-2">Hubungi Saya</h2>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nama:</label>
+                            <input type="text" id="username" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="text" id="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan:</label>
+                            <textarea id="pesan" rows="4" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Kirim</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </form>
+                    
+                    <h3 class="mt-4 text-primary">GITHUB</h3>
+                    <a href="https://github.com/imamfalih62-blip" class="btn btn-dark">GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <P>
-            Pesan:
-            <p></p>
-            <textarea rows="7" cols="35"></textarea>
-        </P>
-
-        <p>
-            <button type="submit">Kirim</button>
-            <button type="reset">reset</button>
-        </p>
-    </form>
-    <h3>GITHUB</h3>
-    <a href="https://github.com/imamfalih62-blip"> 
-    <button>github</button></a>
-
-    <!-- penggunaan tag div untuk memudahkan ngoding-->
-    <div class="head">
-        <h2 align="center"> THANK YOU</h2>
-    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="head">
+                <h2 class="text-white pt-2 mb-0">THANK YOU</h2>
+            </div>
+            <p class="mb-0 pb-2">&copy; 2025 Profil Imam Falih.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

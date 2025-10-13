@@ -1,81 +1,55 @@
-/* Gunakan font sans-serif untuk seluruh teks */
-/* Tambahkan latar belakang berwarna lembut pada halaman */
-body {
-    font-family: Arial, Helvetica, sans-serif; /* Font sans-serif */
-    background-color: #f0f8ff; /* Latar belakang berwarna lembut (Alice Blue) */
-    color: #333; /* Warna teks default abu-abu gelap */
-    margin: 0; 
-    padding: 20px;
+/* Wajib untuk Full Screen Height agar footer selalu di bawah viewport */
+html, body {
+    height: 100%; 
+    margin: 0;    
+    padding: 0;   
+    /* Font family Anda yang lama */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; 
+    /* Latar belakang halaman utama dikontrol oleh class 'bg-light' di body HTML */
 }
 
-/* --- HEADINGS --- */
 
-/* Ubah warna teks heading menjadi biru */
+/* Ubah warna teks heading (Mengambil warna primer dari Bootstrap) */
 h1, h2, h3 {
-    color: #007bff; /* Warna biru terang */
-    margin-bottom: 10px; 
+    /* Menggunakan warna #007bff agar sesuai dengan kode Anda sebelumnya */
+    color: #0d6efd; /* Blue 500 Bootstrap */
+    margin-bottom: 10px; /* Jarak bawah (Bootstrap menggunakan kelas mb-X) */
 }
 
-/* Penengahan untuk H1 WELCOME */
-h1 {
-    text-align: center;
-}
-
-/* --- PARAGRAPH --- */
-
-/* Atur jarak antar paragraf menggunakan properti margin */
+/* Penataan Paragraf */
 p {
-    margin-bottom: 15px; /* Jarak 15px di bawah setiap paragraf */
-    line-height: 1.6; /* Opsional: Meningkatkan keterbacaan baris */
+    margin-bottom: 15px; 
+    line-height: 1.6; /* Peningkatan keterbacaan */
 }
 
-/* --- TABEL & MEDIA (Foto & Video) --- */
 
-table {
-    border-collapse: collapse;
-    margin-bottom: 20px;
+/* Gaya untuk kartu info (latar belakang media) */
+.info-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa; /* Light grey */
+    border: 1px solid #e9ecef;
 }
 
-th, td {
-    padding: 8px;
-    border: 1px solid #ccc;
-    text-align: left;
+/* Memastikan media di dalam kartu tetap responsif dan memiliki batas tinggi */
+.profile-media img, .profile-media video {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Pastikan width/height inline di HTML diabaikan */
+    width: 100% !important; 
+    height: auto !important; 
 }
 
-/* Penengahan Teks "Foto Profil" dan "Video Hobi" */
-th p {
-    text-align: center; 
+
+/* Efek hover kustom untuk tombol (menggantikan yang lama) */
+.btn-danger:hover {
+    background-color: #bb2d3b; /* Merah gelap */
 }
-
-/* Agar gambar dan video juga rata tengah di kolom tabel */
-img, video {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+.btn-success:hover {
+    background-color: #157347; /* Hijau gelap */
 }
-
-/* --- FORM & BUTTONS --- */
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3; 
-}
-
-input[type="text"], textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 40%;
-    margin-top: 5px;
+.btn-dark:hover {
+    background-color
 }
